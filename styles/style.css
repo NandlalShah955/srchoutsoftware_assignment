@@ -8,18 +8,16 @@ a {
   text-decoration: none;
 }
 header {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
   height: 85px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 50px 13%;
   background-color: white;
-  border: 1px solid red;
-
 }
 .logo > img {
   height: 40px;
@@ -77,50 +75,79 @@ nav + button a {
   transform-origin: bottom left;
 }
 
-.srvice{
-    width: 280px;
-    margin: auto;
-    text-align: center;
-    padding: 3px 30px ;
-    background-color: #EDE0F4;
-    border-radius: 8px;
-    margin-top: 130px;
+.srvice {
+  width: 280px;
+  margin: auto;
+  text-align: center;
+  padding: 3px 30px;
+  background-color: #ede0f4;
+  border-radius: 8px;
+  margin-top: 130px;
 }
-.srvice p{
-    color: #951FB3;
-    font-family: "Roboto", Sans-serif;
-    font-size: 18px;
-    font-weight: 550;
-    line-height: 27px;
+.srvice p {
+  color: #951fb3;
+  font-family: "Roboto", Sans-serif;
+  font-size: 18px;
+  font-weight: 550;
+  line-height: 27px;
 }
-.srvice+div{
-    border: 1px solid red;
-    width: 500px;
-    margin: auto;
-    margin-top: 20px;
-    text-align: center;
+.srvice + div {
+  width: 500px;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
 }
-.srvice+div>p{
-    color: #010101;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 48px;
+.srvice + div > p {
+  color: #010101;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
 }
-.srvice+div>p>span{
-    font-weight: 200;
+.srvice + div > p > span {
+  font-weight: 200;
+}
+.gridfacilities {
+  width: 76%;
+  margin: auto;
+  margin-top: 20px;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.gridfacilities > div {
+  height: 265px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  padding: 25px 30px 30px 35px;
+  z-index: 1;
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.gridfacilities > div:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+  transition: 0.8s ease-in-out;
+}
 
+.gridfacilities > div svg {
+  height: 49px;
+  width: 49px;
+  fill: #30347b;
 }
-.gridfacilities{
-    border: 1px solid red;
-    width: 76%;
-    margin: auto;
-    margin-top: 20px;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
+.gridfacilities > div > h3 {
+  color: #010101;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 15px;
+  margin-top: 20px;
 }
-.gridfacilities>div{
-    border:1px solid green;
-height: 200px;
+.gridfacilities > div > p {
+  line-height: 1.5;
+  color: #666;
+  font-size: 17px;
+  font-family: "Roboto", Sans-serif;
 }
